@@ -6,9 +6,9 @@ lang: zh-CN
 timezone: Asia/Shanghai
 
 title: 码农墨迹
-tagline: 记录技术成长，分享生活瞬间
+tagline: 嵌入式开发与边缘 AI 实践
 description: >-
-  这是一个关于全栈开发、AI 探索以及生活随笔的技术博客。
+  记录 GD32/STM32 固件、工业通信、嵌入式 Linux、RK3588 视觉和本地 AI 应用的项目实践。
 
 # GitHub Pages 项目站点：baseurl 与仓库名称保持一致
 url: "https://ywx920.github.io"
