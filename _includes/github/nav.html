@@ -1,0 +1,15 @@
+<nav class="site-nav" aria-label="主导航">
+  <div class="site-container"><div class="nav-items">
+    {% for item in site.data.navigation %}
+      {% assign active = false %}
+      {% case item.key %}
+        {% when 'home' %}{% if page.url == '/' %}{% assign active = true %}{% endif %}
+        {% when 'projects' %}{% if page.url contains '/projects/' %}{% assign active = true %}{% endif %}
+        {% when 'notes' %}{% if page.layout == 'post' or page.url contains '/archives/' %}{% assign active = true %}{% endif %}
+        {% when 'categories' %}{% if page.url contains '/categories/' or page.url contains '/tags/' %}{% assign active = true %}{% endif %}
+        {% when 'about' %}{% if page.url contains '/about/' %}{% assign active = true %}{% endif %}
+      {% endcase %}
+      <a class="nav-item{% if active %} is-active{% endif %}" href="{{ item.url | relative_url }}"{% if active %} aria-current="page"{% endif %}>{% include github/icon.html name=item.icon %}<span>{{ item.title }}</span>{% if item.key == 'projects' %}<span class="count-badge">{{ site.data.projects.size }}</span>{% endif %}</a>
+    {% endfor %}
+  </div></div>
+</nav>

@@ -1,0 +1,8 @@
+---
+layout: default
+---
+<header class="page-heading"><div><span class="eyebrow">PUBLIC REPOSITORIES</span><h1>项目<span class="count-badge">{{ site.data.projects.size }}</span></h1><p>固件、工业通信、嵌入式 Linux 与本地 AI 应用。</p></div><a class="button" href="https://github.com/ywx920?tab=repositories" target="_blank" rel="noopener noreferrer">在 GitHub 浏览{% include github/icon.html name="external" %}</a></header>
+<div class="projects-toolbar"><label class="filter-input">{% include github/icon.html name="search" %}<input type="search" id="project-query" placeholder="查找仓库、技术或关键词" aria-label="筛选项目"></label><p id="project-count" role="status">共 {{ site.data.projects.size }} 个项目</p></div>
+<div class="filter-chips" role="group" aria-label="按方向筛选项目"><button class="filter-chip is-active" type="button" data-project-filter="all" aria-pressed="true">全部</button><button class="filter-chip" type="button" data-project-filter="firmware" aria-pressed="false">固件与 RTOS</button><button class="filter-chip" type="button" data-project-filter="industrial" aria-pressed="false">工业通信</button><button class="filter-chip" type="button" data-project-filter="vision" aria-pressed="false">边缘视觉</button><button class="filter-chip" type="button" data-project-filter="ai" aria-pressed="false">AI 应用</button><button class="filter-chip" type="button" data-project-filter="web" aria-pressed="false">站点</button></div>
+<div class="project-grid project-grid-detailed">{% for project in site.data.projects %}{% include github/project-card.html project=project detailed=true %}{% endfor %}</div>
+<p class="empty-state" id="project-empty" hidden>没有匹配的项目，试试其他关键词或方向。</p>

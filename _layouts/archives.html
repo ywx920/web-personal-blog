@@ -1,0 +1,6 @@
+---
+layout: default
+---
+<header class="page-heading"><div><span class="eyebrow">ENGINEERING NOTES</span><h1>笔记归档<span class="count-badge">{{ site.posts.size }}</span></h1><p>按时间整理项目中的实现、定位与验证。</p></div><a class="button" href="{{ '/categories/' | relative_url }}">{% include github/icon.html name="tag" %}按分类浏览</a></header>
+{% assign years = site.posts | group_by_exp: 'post', "post.date | date: '%Y'" %}
+{% for year in years %}<section class="archive-section"><h2>{{ year.name }}<span class="archive-rule"></span></h2><div class="post-list">{% for post in year.items %}{% include github/post-row.html post=post %}{% endfor %}</div></section>{% endfor %}

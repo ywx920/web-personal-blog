@@ -1,0 +1,5 @@
+---
+layout: default
+---
+<header class="page-heading"><div><span class="eyebrow">TOPICS</span><h1>全部标签</h1><p>按芯片、协议、工具与框架查找笔记。</p></div></header>
+<div class="tag-index">{% assign tags = site.tags | sort %}{% for tag in tags %}{% assign slug = tag[0] | slugify %}<a class="tag-index-item" href="{{ '/tags/' | append: slug | append: '/' | relative_url }}">{% include github/icon.html name="tag" %}{{ tag[0] }}<span class="count-badge">{{ tag[1].size }}</span></a>{% endfor %}</div>

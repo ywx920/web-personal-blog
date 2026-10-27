@@ -5,7 +5,7 @@ theme: jekyll-theme-chirpy
 lang: zh-CN
 timezone: Asia/Shanghai
 
-title: 码农墨迹
+title: "ywx920 · 技术笔记"
 tagline: 嵌入式开发与边缘 AI 实践
 description: >-
   记录 GD32/STM32 固件、工业通信、嵌入式 Linux、RK3588 视觉和本地 AI 应用的项目实践。
@@ -18,7 +18,7 @@ github:
   username: ywx920
 
 social:
-  name: ywx567
+  name: ywx920
   email: ywx20@foxmail.com
   links:
     - https://github.com/ywx920 # 第一个是版权链接
@@ -27,8 +27,8 @@ social:
 # 插件与功能（已关闭未配置项，防止报错）
 # ==========================================
 
-# 暂时置空头像，直到你上传了图片到 assets/img/avatar.jpg
-avatar: 
+# 站点代码标识
+avatar: /assets/img/avatar.svg
 
 # 关闭未配置的评论系统
 comments:
@@ -39,9 +39,9 @@ toc: true
 
 # PWA 设置
 pwa:
-  enabled: true
+  enabled: false
   cache:
-    enabled: true
+    enabled: false
 
 paginate: 10
 
@@ -82,3 +82,13 @@ exclude:
   - "*.config.js"
   - "package*.json"
   - vendor
+
+# Explicit archive routes for the custom reading layouts.
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    category: /categories/:name/
+    tag: /tags/:name/

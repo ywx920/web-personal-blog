@@ -1,0 +1,226 @@
+[
+  {
+    "key": "di32",
+    "name": "gd32f450-di32-can-firmware",
+    "title": "数字量采集与 CAN 固件",
+    "kind": "firmware",
+    "group": "固件与 RTOS",
+    "language": "C",
+    "color": "#555555",
+    "featured": true,
+    "status": "主机测试通过，待板端联调",
+    "description": "GPIO 采集、状态编码、CAN 上报与心跳；通过主机测试检查协议和发送队列。",
+    "topics": [
+      "GD32F450",
+      "CAN",
+      "Keil",
+      "Python"
+    ],
+    "note": "/posts/gd32-di32-can-notes/",
+    "url": "https://github.com/ywx920/gd32f450-di32-can-firmware"
+  },
+  {
+    "key": "gateway",
+    "name": "loongarch-can-rs485-gateway",
+    "title": "LoongArch 通信网关",
+    "kind": "industrial",
+    "group": "工业通信",
+    "language": "C",
+    "color": "#555555",
+    "featured": true,
+    "status": "开发版本，持续验证",
+    "description": "Linux / 龙芯平台的 CAN 与 RS485 网关，包含路由、Modbus 转换、去重、超时和恢复逻辑。",
+    "topics": [
+      "LoongArch",
+      "Linux",
+      "CAN",
+      "Modbus"
+    ],
+    "note": "/posts/loongarch-protocol-gateway/",
+    "url": "https://github.com/ywx920/loongarch-can-rs485-gateway"
+  },
+  {
+    "key": "vision",
+    "name": "rk3588-multi-camera-demo",
+    "title": "多路摄像头与边缘推理",
+    "kind": "vision",
+    "group": "边缘视觉",
+    "language": "C++",
+    "color": "#f34b7d",
+    "featured": true,
+    "status": "持续迭代",
+    "description": "从 V4L2 采集到 RGA 预处理、RKNN 检测与 Qt / Web 预览，记录调度、缓冲管理和稳定性。",
+    "topics": [
+      "RK3588",
+      "V4L2",
+      "Qt",
+      "RKNN"
+    ],
+    "note": "/posts/rk3588-camera-edge-ai/",
+    "url": "https://github.com/ywx920/rk3588-multi-camera-demo"
+  },
+  {
+    "key": "osint",
+    "name": "osint-local-ai-dashboard",
+    "title": "本地 AI 信息看板",
+    "kind": "ai",
+    "group": "AI 应用",
+    "language": "Python",
+    "color": "#3572a5",
+    "featured": true,
+    "status": "学习与工程实验",
+    "description": "公开 RSS 采集、队列处理、结构化摘要、数据库与可搜索的信息看板。",
+    "topics": [
+      "FastAPI",
+      "Ollama",
+      "PostgreSQL",
+      "Docker"
+    ],
+    "note": "/posts/local-ai-osint-dashboard/",
+    "url": "https://github.com/ywx920/osint-local-ai-dashboard"
+  },
+  {
+    "key": "mdk",
+    "name": "gd32f407-mdk-template",
+    "title": "GD32 MDK 工程模板",
+    "kind": "firmware",
+    "group": "固件与 RTOS",
+    "language": "C",
+    "color": "#555555",
+    "description": "GD32 标准库、CMSIS 与 Keil MDK 的基础工程入口。",
+    "topics": [
+      "GD32F407",
+      "CMSIS",
+      "Keil"
+    ],
+    "url": "https://github.com/ywx920/gd32f407-mdk-template"
+  },
+  {
+    "key": "up-lite",
+    "name": "gd32f407-up-lite-firmware",
+    "title": "板级驱动与外设固件",
+    "kind": "firmware",
+    "group": "固件与 RTOS",
+    "language": "C",
+    "color": "#555555",
+    "description": "围绕板级支持与外设接口组织的 GD32 固件工程。",
+    "topics": [
+      "GD32F407",
+      "BSP",
+      "I2C"
+    ],
+    "url": "https://github.com/ywx920/gd32f407-up-lite-firmware"
+  },
+  {
+    "key": "rtos-demo",
+    "name": "gd32f407-freertos-demo",
+    "title": "FreeRTOS 基础实验",
+    "kind": "firmware",
+    "group": "固件与 RTOS",
+    "language": "C",
+    "color": "#555555",
+    "description": "多任务、SysTick 和基础外设实验，用最小工程验证任务调度。",
+    "topics": [
+      "FreeRTOS",
+      "GD32F407",
+      "SysTick"
+    ],
+    "url": "https://github.com/ywx920/gd32f407-freertos-demo"
+  },
+  {
+    "key": "rtos-firmware",
+    "name": "gd32f407-freertos-firmware",
+    "title": "RTOS 与网络相关实践",
+    "kind": "firmware",
+    "group": "固件与 RTOS",
+    "language": "C",
+    "color": "#555555",
+    "description": "GD32F407 平台的 RTOS 与网络相关工程实践。",
+    "topics": [
+      "FreeRTOS",
+      "GD32F407",
+      "lwIP"
+    ],
+    "url": "https://github.com/ywx920/gd32f407-freertos-firmware"
+  },
+  {
+    "key": "ipmb",
+    "name": "stm32f103-ipmb-freertos-firmware",
+    "title": "I2C / IPMB 收发实验",
+    "kind": "firmware",
+    "group": "固件与 RTOS",
+    "language": "C",
+    "color": "#555555",
+    "description": "I2C 中断收发、IPMB 相关实验及 USART 调试观测。",
+    "topics": [
+      "STM32F103",
+      "I2C",
+      "IPMB",
+      "USART"
+    ],
+    "url": "https://github.com/ywx920/stm32f103-ipmb-freertos-firmware"
+  },
+  {
+    "key": "zx2103",
+    "name": "gd32f407-zx2103-firmware",
+    "title": "板级固件与器件适配",
+    "kind": "firmware",
+    "group": "固件与 RTOS",
+    "language": "C",
+    "color": "#555555",
+    "description": "板级固件、器件通信适配与调试过程记录。",
+    "topics": [
+      "GD32F407",
+      "BSP",
+      "SMBus"
+    ],
+    "url": "https://github.com/ywx920/gd32f407-zx2103-firmware"
+  },
+  {
+    "key": "zx2505",
+    "name": "stm32f103-zx2505-bmc-firmware",
+    "title": "BMC 场景外设实验",
+    "kind": "firmware",
+    "group": "固件与 RTOS",
+    "language": "C",
+    "color": "#555555",
+    "description": "BMC 场景中的外设访问和 IPMB 相关实验。",
+    "topics": [
+      "STM32F103",
+      "BMC",
+      "IPMB"
+    ],
+    "url": "https://github.com/ywx920/stm32f103-zx2505-bmc-firmware"
+  },
+  {
+    "key": "blog",
+    "name": "web-personal-blog",
+    "title": "技术笔记与项目索引",
+    "kind": "web",
+    "group": "站点",
+    "language": "HTML",
+    "color": "#e34c26",
+    "description": "本站的文章、项目索引、Jekyll 布局与样式。",
+    "topics": [
+      "Jekyll",
+      "GitHub Pages",
+      "Markdown"
+    ],
+    "url": "https://github.com/ywx920/web-personal-blog"
+  },
+  {
+    "key": "site",
+    "name": "web-personal-site",
+    "title": "个人网页实验",
+    "kind": "web",
+    "group": "站点",
+    "language": "HTML",
+    "color": "#e34c26",
+    "description": "用于记录和尝试个人网页的基础工程。",
+    "topics": [
+      "HTML",
+      "GitHub Pages"
+    ],
+    "url": "https://github.com/ywx920/web-personal-site"
+  }
+]

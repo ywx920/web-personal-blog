@@ -1,0 +1,9 @@
+{% assign post = include.post %}
+<article class="post-row">
+  <span class="post-row-icon">{% if post.pin %}{% include github/icon.html name="pin" %}{% else %}{% include github/icon.html name="file" %}{% endif %}</span>
+  <div class="post-row-content">
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a>{% if post.pin %}<span class="pin-label">置顶</span>{% endif %}</h3>
+    <p>{{ post.description | default: post.excerpt | strip_html | truncate: 150 }}</p>
+    <div class="post-row-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y-%m-%d' }}</time>{% for tag in post.tags limit:3 %}<a class="tag-link" href="{{ '/tags/' | append: tag | append: '/' | relative_url }}">#{{ tag }}</a>{% endfor %}</div>
+  </div>
+</article>

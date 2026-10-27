@@ -1,0 +1,5 @@
+---
+layout: default
+---
+<header class="page-heading"><div><span class="eyebrow">TOPICS</span><h1>文章分类</h1><p>从技术方向进入具体的工程笔记。</p></div><a class="button" href="{{ '/tags/' | relative_url }}">{% include github/icon.html name="tag" %}全部标签</a></header>
+<div class="taxonomy-list">{% assign categories = site.categories | sort %}{% for category in categories %}{% assign slug = category[0] | slugify %}<a class="taxonomy-row" href="{{ '/categories/' | append: slug | append: '/' | relative_url }}">{% include github/icon.html name="book" %}<span>{{ category[0] }}</span><span class="count-badge">{{ category[1].size }}</span>{% include github/icon.html name="chevron" %}</a>{% endfor %}</div>

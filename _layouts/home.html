@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<section class="intro-box">
+  <div class="box-heading">{% include github/icon.html name="book" %}<span>开发档案</span><span class="box-meta">工程实践</span></div>
+  <div class="intro-content"><h1>嵌入式开发与边缘 AI</h1><p>从 MCU 固件、工业总线到 Linux 网关与多路视觉，<br class="desktop-break">记录项目的实现思路、调试过程和验证结果。</p><div class="intro-actions"><a class="button button-primary" href="{{ '/projects/' | relative_url }}">{% include github/icon.html name="repo" %}查看项目</a><a class="button" href="{{ '/posts/embedded-technology-map/' | relative_url }}">技术栈与项目地图{% include github/icon.html name="arrow" %}</a></div></div>
+</section>
+<section class="home-section" aria-labelledby="featured-heading">
+  <div class="section-heading"><h2 id="featured-heading">精选项目</h2><a href="{{ '/projects/' | relative_url }}">全部 {{ site.data.projects.size }} 个项目{% include github/icon.html name="arrow" %}</a></div>
+  <div class="project-grid">{% assign featured = site.data.projects | where: 'featured', true %}{% for project in featured %}{% include github/project-card.html project=project %}{% endfor %}</div>
+</section>
+<section class="home-section" aria-labelledby="notes-heading">
+  <div class="section-heading"><h2 id="notes-heading">技术笔记<span class="count-badge">{{ site.posts.size }}</span></h2><a href="{{ '/archives/' | relative_url }}">查看归档{% include github/icon.html name="arrow" %}</a></div>
+  <div class="post-list">{% assign pinned = site.posts | where: 'pin', true %}{% for post in pinned %}{% include github/post-row.html post=post %}{% endfor %}{% for post in site.posts %}{% unless post.pin %}{% include github/post-row.html post=post %}{% endunless %}{% endfor %}</div>
+</section>

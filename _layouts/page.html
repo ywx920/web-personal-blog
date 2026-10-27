@@ -1,0 +1,6 @@
+---
+layout: default
+---
+{% assign title_key = page.title | downcase %}
+{% assign display_title = site.data.locales[site.lang].tabs[title_key] | default: page.title %}
+<article class="document-box"><header class="document-header"><span class="eyebrow">ywx920 / notes</span><h1>{{ display_title }}</h1></header><div class="markdown-body">{{ content }}</div></article>

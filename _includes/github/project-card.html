@@ -1,0 +1,8 @@
+{% assign project = include.project %}
+<article class="project-card" id="project-{{ project.key }}" data-project-card data-kind="{{ project.kind | escape }}">
+  <div class="project-card-heading">{% include github/icon.html name="repo" %}<a href="{{ project.url }}" target="_blank" rel="noopener noreferrer">{{ project.name }}</a><span class="visibility-badge">Public</span></div>
+  <h3>{{ project.title }}</h3>
+  <p class="project-description">{{ project.description }}</p>
+  {% if include.detailed %}<div class="topics">{% for topic in project.topics %}<span class="topic">{{ topic }}</span>{% endfor %}</div>{% if project.status %}<p class="project-status">{% include github/icon.html name="clock" %}{{ project.status }}</p>{% endif %}{% endif %}
+  <div class="project-card-footer"><span class="language"><span class="language-dot" style="--language-color: {{ project.color }}"></span>{{ project.language }}</span><span class="project-group">{{ project.group }}</span>{% if project.note %}<a class="project-note" href="{{ project.note | relative_url }}">阅读笔记{% include github/icon.html name="arrow" %}</a>{% endif %}</div>
+</article>

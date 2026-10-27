@@ -1,0 +1,17 @@
+<aside class="profile" aria-label="作者简介">
+  <div class="profile-identity">
+    <img class="profile-avatar" src="{{ '/assets/img/avatar.svg' | relative_url }}" width="144" height="144" alt="ywx920 的代码标识">
+    <div><h2 class="profile-name">ywx920</h2><p class="profile-handle">技术笔记与项目记录</p></div>
+  </div>
+  <p class="profile-bio">嵌入式开发、工业通信与边缘 AI。<br>记录实现过程，也记录验证结果。</p>
+  <a class="button profile-github" href="https://github.com/ywx920" target="_blank" rel="noopener noreferrer">在 GitHub 查看项目{% include github/icon.html name="external" %}</a>
+  <div class="profile-counts"><span><strong>{{ site.posts.size }}</strong> 篇笔记</span><span><strong>{{ site.data.projects.size }}</strong> 个仓库</span></div>
+  <div class="profile-extra">
+    <h3>关注方向</h3>
+    <div class="topics"><span class="topic">C / C++</span><span class="topic">MCU</span><span class="topic">Linux</span><span class="topic">Edge AI</span></div>
+    <div class="profile-divider"></div>
+    <a class="quiet-link" href="{{ '/posts/embedded-technology-map/' | relative_url }}">{% include github/icon.html name="book" %}技术栈与项目地图</a>
+    <a class="quiet-link" href="{{ '/tags/' | relative_url }}">{% include github/icon.html name="tag" %}按标签浏览</a>
+    <a class="quiet-link" href="{{ '/feed.xml' | relative_url }}">{% include github/icon.html name="file" %}订阅 RSS</a>
+  </div>
+</aside>
