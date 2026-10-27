@@ -11,8 +11,8 @@ description: >-
   这是一个关于全栈开发、AI 探索以及生活随笔的技术博客。
 
 # 必须确认你的 GitHub 仓库名就是 ywx567.github.io
-url: "https://ywx567.github.io"
-baseurl: "" 
+url: "https://ywx920.github.io"
+baseurl: "/ywx567-blog"
 
 github:
   username: ywx920
