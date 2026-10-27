@@ -1,5 +1,5 @@
 ---
-title: 关于我
+title: About
 icon: fas fa-info-circle
 order: 5
 permalink: /about/

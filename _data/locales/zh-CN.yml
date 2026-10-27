@@ -1,0 +1,4 @@
+# Extend Chirpy's built-in locale without copying the complete theme data.
+tabs:
+  projects: 项目
+  about: 关于我

@@ -1,5 +1,5 @@
 ---
-title: 项目
+title: Projects
 icon: fas fa-layer-group
 order: 4
 permalink: /projects/
