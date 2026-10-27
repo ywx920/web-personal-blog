@@ -10,9 +10,9 @@ tagline: 记录技术成长，分享生活瞬间
 description: >-
   这是一个关于全栈开发、AI 探索以及生活随笔的技术博客。
 
-# 必须确认你的 GitHub 仓库名就是 ywx567.github.io
+# GitHub Pages 项目站点：baseurl 与仓库名称保持一致
 url: "https://ywx920.github.io"
-baseurl: "/ywx567-blog"
+baseurl: "/web-personal-blog"
 
 github:
   username: ywx920
